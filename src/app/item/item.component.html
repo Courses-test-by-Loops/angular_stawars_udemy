@@ -3,8 +3,12 @@
   class="list-group-item list-group-item-action flex-column align-items-start"
 >
   <h5 class="mb-1">{{ character.name }}</h5>
-  <div class="d-flex w-200 justify-content-left">
-    <button class="btn btn-primary mr-1">light</button>
-    <button class="btn btn-danger mr-1">Dark</button>
+  <div class="d-flex w-100 justify-content-left">
+    <button class="btn btn-primary mr-1" (click)="onAssign('light')">
+      light
+    </button>
+    <button class="btn btn-danger mr-1" (click)="onAssign('dark')">
+      Dark
+    </button>
   </div>
 </a>
