@@ -21,6 +21,9 @@ export class CreateCharacterComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit(submittedForm) {
+    if (submittedForm.invalid) {
+      return;
+    }
     console.log(submittedForm.value);
     this.swService.addCharacter(
       submittedForm.value.name,
