@@ -3,7 +3,7 @@ import { LogService } from './log.service';
 
 @Injectable()
 export class StarWarsService {
-  characters = [
+  private characters = [
     { name: 'Luke Skywalker', side: '' },
     { name: 'Darth Vader', side: '' },
   ];
